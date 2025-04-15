@@ -6,6 +6,8 @@ TagManager:
   tags:
   - LookAtPlayer
   - CinemachineFreeLook
+  - PlayerGFX
+  - ActionPanel
   layers:
   - Default
   - TransparentFX
