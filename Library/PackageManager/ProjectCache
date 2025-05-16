@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638796328245387844
-    m_Hash: 1153229734
+      ticks: 638803368048673285
+    m_Hash: 3930660521
   m_LockFileStatus:
     m_FilePath: C:/Users/alexg/The-Guardian/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638796328245445315
-    m_Hash: 1556612416
+      ticks: 638803368048683290
+    m_Hash: 883376189
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -3260,12 +3260,14 @@ m_ResolvedPackages:
     - 3.0.31
     - 3.0.34
     - 3.0.35
+    - 3.0.36
     compatible:
     - 3.0.28
     - 3.0.31
     - 3.0.34
     - 3.0.35
-    recommended: 3.0.35
+    - 3.0.36
+    recommended: 3.0.36
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit

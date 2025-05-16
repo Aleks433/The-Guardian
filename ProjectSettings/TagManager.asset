@@ -8,6 +8,9 @@ TagManager:
   - CinemachineFreeLook
   - PlayerGFX
   - ActionPanel
+  - Enemy
+  - DeadHero
+  - DeadEnemy
   layers:
   - Default
   - TransparentFX

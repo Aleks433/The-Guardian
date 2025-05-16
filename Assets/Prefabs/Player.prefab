@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5529625177935968015}
-  - component: {fileID: 5003044686600730735}
+  - component: {fileID: 6148512053169236700}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -64,7 +64,7 @@ Transform:
   - {fileID: 7541904766334944949}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5003044686600730735
+--- !u!114 &6148512053169236700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 964894427405998200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7204d5dae51b20b4195734eefb3c2390, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ae6f6fad03adee47ab1b9a6dbf740b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 4066858187921160552}
@@ -81,7 +81,7 @@ MonoBehaviour:
   walkingSpeed: 3
   runningSpeed: 5
   rotationFactor: 15
-  rotationSmoothness: 0.1
+  rotationSmoothness: 0.2
 --- !u!1001 &8007544243843572062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ CharacterController:
   m_Radius: 0.45
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.05
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1.1, z: 0}
 --- !u!4 &7541904766334944949 stripped

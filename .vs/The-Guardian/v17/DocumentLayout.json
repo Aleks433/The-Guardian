@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\alexg\\The-Guardian\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\basehero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\basehero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|c:\\users\\alexg\\the-guardian\\assets\\scripts\\statemachines\\battlestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\statemachines\\battlestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|c:\\users\\alexg\\the-guardian\\assets\\scripts\\herostatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\herostatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|c:\\users\\alexg\\the-guardian\\assets\\scripts\\statemachines\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\statemachines\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\baseenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|c:\\users\\alexg\\the-guardian\\assets\\scripts\\statemachines\\herostatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\statemachines\\herostatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|c:\\users\\alexg\\the-guardian\\assets\\scripts\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|c:\\users\\alexg\\the-guardian\\assets\\scripts\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EnemyStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\EnemyStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyStateMachine.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\EnemyStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemyStateMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T16:46:13.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HeroStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\HeroStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HeroStateMachine.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\HeroStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HeroStateMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T16:44:01.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BaseEnemy.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\BaseEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BaseEnemy.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\BaseEnemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BaseEnemy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Title": "HeroStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\HeroStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StateMachines\\HeroStateMachine.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\HeroStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StateMachines\\HeroStateMachine.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwIcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T16:38:55.25Z",
+              "WhenOpened": "2025-05-12T19:07:46.863Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BaseHero.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\BaseHero.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\BaseHero.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\BaseHero.cs",
-              "RelativeToolTip": "Assets\\Scripts\\BaseHero.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAWAAAA",
+              "Title": "BattleStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowPIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T16:36:46.103Z",
+              "WhenOpened": "2025-05-12T15:12:38.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:02:52.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Movement\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Movement\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Movement\\PlayerMovement.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAwwEwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T16:03:26.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AQIAAG4AAAAAAAAAAAAowIEAAAAsAAAA",
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T16:34:11.309Z"
+              "WhenOpened": "2025-05-11T16:00:46.696Z",
+              "EditorCaption": ""
             }
           ]
         }
