@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public class BattleStateMachine : MonoBehaviour
 {
     public enum PerformAction
     {
+        INIT,
         WAIT,
         TAKEACTION,
         PERFORMACTION,
@@ -50,12 +52,47 @@ public class BattleStateMachine : MonoBehaviour
     private List<GameObject> enemyButtons = new List<GameObject>();
 
 
+    public List<GameObject> allyPrefabs = new List<GameObject>();
+    public List<Transform> allySpawns = new List<Transform>();
+    public List <GameObject> enemyPrefabs = new List<GameObject>();
+    public List <Transform> enemySpawns = new List<Transform>();
 
+    private void Awake()
+    {
+        battleState = PerformAction.INIT;
+    }
     void Start()
     {
+    }
+    void InitBattle()
+    {
+        //wait for allies/enemies to init
+        if(allyPrefabs.Count == 0 || enemyPrefabs.Count == 0)
+        {
+            return;
+        }
+
+        //Instantiate allies
+        for(int i = 0;i < allyPrefabs.Count;i++)
+        {
+            GameObject ally = Instantiate(allyPrefabs[i]);
+            HeroStateMachine allyStateMachine = ally.GetComponent<HeroStateMachine>();
+            ally.transform.position = allySpawns[i].transform.position;
+            ally.gameObject.name = allyStateMachine.hero.characterName;
+            heroesInBattle.Add(ally);
+        }
+
+        //Instantiate enemies
+        for(int i=0;i < enemyPrefabs.Count;i++)
+        {
+            GameObject enemy = Instantiate(enemyPrefabs[i]);
+            EnemyStateMachine enemyStateMachine = enemy.GetComponent<EnemyStateMachine>();
+            enemy.transform.position = enemySpawns[i].transform.position;
+            enemy.name = enemyStateMachine.enemy.characterName;
+            enemiesInBattle.Add(enemy);
+        }
+
         battleState = PerformAction.WAIT;
-        enemiesInBattle.AddRange(GameObject.FindGameObjectsWithTag("Enemy"));
-        heroesInBattle.AddRange(GameObject.FindGameObjectsWithTag("Player"));
         heroInput = HeroGUI.ACTIVATE;
 
         actionPanel.SetActive(false);
@@ -63,12 +100,16 @@ public class BattleStateMachine : MonoBehaviour
         magicPanel.SetActive(false);
 
         EnemyButtons();
+        Cursor.lockState = CursorLockMode.None;
     }
 
     void Update()
     {
         switch (battleState)
         {
+            case PerformAction.INIT:
+                InitBattle();
+                return;
             case PerformAction.WAIT:
                  if(performList.Count > 0)
                  {
@@ -137,6 +178,7 @@ public class BattleStateMachine : MonoBehaviour
                 {
                     heroesInBattle[i].GetComponent<HeroStateMachine>().currentState = HeroStateMachine.TurnState.WAITING;
                 }
+                GameObject.Find("GameManager").GetComponent<GameManager>().state = GameManager.GameState.BATTLE_OVER;
                 break;
         }
         switch(heroInput)

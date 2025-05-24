@@ -1,11 +1,14 @@
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private static PlayerMovement singleton;
+    GameManager gameManager;
     PlayerInput playerInput;
     public CharacterController controller;
 
@@ -13,17 +16,18 @@ public class PlayerMovement : MonoBehaviour
     int isWalkingHash;
     int isRunningHash;
 
-    Vector2 movementInput;
-    Vector3 currentMovement;
+    private Vector2 movementInput;
+    private Vector3 currentMovement;
+    private Vector3 previousPosition;
 
     bool isMovementPressed;
     bool isRunningPressed;
     float currentSpeed;
 
-    public float walkingSpeed = 7.0f;
-    public float runningSpeed = 15.0f;
-    public float rotationFactor = 15.0f;
-    public float rotationSmoothness = 0.2f;
+    public float walkingSpeed;
+    public float runningSpeed;
+    public float rotationFactor;
+    public float rotationSmoothness;
     float turnSmoothVelocity;
 
     private void Awake()
@@ -51,6 +55,16 @@ public class PlayerMovement : MonoBehaviour
         cinemachineCamera.LookAt = lookAt.transform;
         cinemachineCamera.Follow = lookAt.transform;
     }
+    private void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        if(gameManager.playerPosition != Vector3.zero && gameManager.playerRotation != Quaternion.identity)
+        {
+            transform.position = gameManager.playerPosition;
+            transform.rotation = gameManager.playerRotation;
+        }
+        gameManager.player = gameObject;
+    }
 
     void OnMovementInput(InputAction.CallbackContext context)
     {
@@ -69,10 +83,16 @@ public class PlayerMovement : MonoBehaviour
     private void OnEnable()
     {
         playerInput.Enable();
+        CinemachineFreeLook cinemachineCamera = GameObject.FindWithTag("CinemachineFreeLook").GetComponent<CinemachineFreeLook>();
+        var lookAt = GameObject.FindWithTag("LookAtPlayer");
+        cinemachineCamera.LookAt = lookAt.transform;
+        cinemachineCamera.Follow = lookAt.transform;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void OnDisable()
     {
+        Cursor.lockState = CursorLockMode.None;
         playerInput.Disable();
     }
 
@@ -118,6 +138,35 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Animate();
+        previousPosition = transform.position;
         MovePlayer();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "EncounterZone")
+        {
+            EncounterZone currentZone = other.gameObject.GetComponent<EncounterZone>();
+            currentZone.encounterDistance = 0f;
+        }
+        
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.tag == "EncounterZone")
+        {
+            EncounterZone currentZone = other.gameObject.GetComponent<EncounterZone>();
+            currentZone.encounterDistance = 0f;
+        }
+        
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "EncounterZone")
+        {
+            EncounterZone currentZone = other.gameObject.GetComponent<EncounterZone>();
+            currentZone.encounterDistance += Vector3.Distance(transform.position, previousPosition);
+        }
+        
     }
 }

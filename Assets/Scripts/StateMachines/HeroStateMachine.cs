@@ -113,7 +113,7 @@ public class HeroStateMachine : MonoBehaviour
                     }
 
                     //change color / play death animation
-                    gameObject.transform.Find("GFX").transform.Find("Alpha_Surface").GetComponent<SkinnedMeshRenderer>().material.color = new Color32(105, 105, 105, 255);
+
                     //reset heroInput
                     BSM.battleState = BattleStateMachine.PerformAction.CHECKALIVE;
                     alive = false;

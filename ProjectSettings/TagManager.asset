@@ -11,6 +11,8 @@ TagManager:
   - Enemy
   - DeadHero
   - DeadEnemy
+  - EncounterZone
+  - Hero
   layers:
   - Default
   - TransparentFX
