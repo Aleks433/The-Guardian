@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Scene = UnityEngine.SceneManagement.Scene;
 
+[System.Serializable]
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -15,9 +16,29 @@ public class GameManager : MonoBehaviour
     public string battleScene;
     public string lastScene;
 
+    //Player;
     public GameObject player;
     public Vector3 playerPosition = Vector3.zero;
     public Quaternion playerRotation = Quaternion.identity;
+
+    //Status panel
+    public GameObject statusPanel;
+    public Transform heroButtonContainer;
+    public Transform useableItemContainer;
+    public List<GameObject> heroButtons = new List<GameObject>();
+    public List<GameObject> useableItemButtons = new List<GameObject>();
+    public GameObject heroButtonPrefab;
+    public GameObject useableItemPrefab;
+    bool statusPanelEnabled;
+
+
+
+    //Dialogue
+    DialogueManager dialogueManager;
+
+
+    //Items
+    public List<BaseUseableItem> items = new List<BaseUseableItem>();
 
     
     public enum GameState
@@ -43,11 +64,21 @@ public class GameManager : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+
     // Start is called before the first frame update
     void Start()
     {
         state = GameState.WORLD;
+        dialogueManager = GameObject.FindGameObjectWithTag("DialogueManager").GetComponent<DialogueManager>();
         SpawnPlayer();
+        StatusButtons();
+/*        Dialogue testDialogue = new Dialogue();
+        testDialogue.dialogueTitle = "test";
+        testDialogue.dialogueContent.Enqueue("This is a test dialogue to show if the dialogue system works correctly. Press continue to advance the dialogue");
+        testDialogue.dialogueContent.Enqueue("This is the second sentence of the dialogue");
+        testDialogue.dialogueSpeed = 0.1f;
+        dialogueManager.AddDialogue(testDialogue);
+*/    
     }
 
     // Update is called once per frame
@@ -67,11 +98,25 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(lastScene);
                 break;
         } 
+        if(Input.GetKeyDown(KeyCode.LeftControl)) 
+        {
+            statusPanelEnabled = !statusPanelEnabled;
+        }
+        if(!statusPanelEnabled)
+        {
+            statusPanel.SetActive(false);
+            player.GetComponent<PlayerMovement>().enabled = true;
+        }
+        else
+        {
+            statusPanel.SetActive(true);
+            player.GetComponent<PlayerMovement>().enabled = false;
+        }
     }
+
     void SpawnPlayer()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        Debug.Log(player);
         if (player == null)
         {
             player = Instantiate(worldCharacterPrefab);
@@ -114,6 +159,7 @@ public class GameManager : MonoBehaviour
         BattleStateMachine BSM = GameObject.Find("BattleManager").GetComponent<BattleStateMachine>();
         BSM.allyPrefabs = playerParty;
         BSM.enemyPrefabs = enemiesToBattle;
+        BSM.items = items;
         state = GameState.BATTLE_ONGOING;
 
         SceneManager.activeSceneChanged -= OnBattleSceneEnter;
@@ -124,5 +170,57 @@ public class GameManager : MonoBehaviour
         player.SetActive(true);
 
         SceneManager.sceneLoaded -= OnWorldSceneEnter;
+    }
+    void StatusButtons()
+    {
+        foreach(GameObject heroSelectButton in heroButtons)
+        {
+            Destroy(heroSelectButton);
+        }
+        heroButtons.Clear();
+
+        foreach(GameObject itemSelectButton in useableItemButtons)
+        {
+            Destroy (itemSelectButton);
+        }
+        useableItemButtons.Clear();
+
+        {
+            foreach (GameObject heroObject in playerParty)
+            {
+                BaseHero hero = heroObject.GetComponent<HeroStateMachine>().hero;
+                GameObject button = Instantiate(heroButtonPrefab);
+                SelectHeroButton heroButton = button.GetComponent<SelectHeroButton>();
+                heroButton.hero = hero;
+                heroButton.heroNameText.text = hero.characterName;
+                heroButton.heroHPText.text = "HP: " + hero.currentHP + "/" + hero.baseHP;
+                heroButton.heroMPText.text = "MP: " + hero.currentMP + "/" + hero.baseMP;
+                heroButton.itemSelector = statusPanel.GetComponent<ItemSelector>();
+                button.transform.SetParent(heroButtonContainer, false);
+                heroButtons.Add(button);
+                statusPanel.GetComponent<ItemSelector>().heroButtons.Add(heroButton);
+            }
+        }
+        {
+            foreach(BaseUseableItem item in items)
+            {
+                GameObject button = Instantiate(useableItemPrefab);
+                SelectItemButton itemButton = button.GetComponentInParent<SelectItemButton>();
+                itemButton.item = item;
+                itemButton.itemText.text = item.name;
+                itemButton.itemSelector = statusPanel.GetComponent<ItemSelector>();
+                button.transform.SetParent(useableItemContainer, false);
+                useableItemButtons.Add(button);
+                statusPanel.GetComponent<ItemSelector>().itemButtons.Add(itemButton);
+            }
+        }
+    }
+
+    public void UseItemOnHero(BaseUseableItem item, BaseHero hero)
+    {
+        item.UseItem(hero);
+        items.Remove(item);
+        StatusButtons();
+
     }
 }

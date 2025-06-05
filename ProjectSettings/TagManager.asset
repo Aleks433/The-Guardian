@@ -13,6 +13,7 @@ TagManager:
   - DeadEnemy
   - EncounterZone
   - Hero
+  - DialogueManager
   layers:
   - Default
   - TransparentFX

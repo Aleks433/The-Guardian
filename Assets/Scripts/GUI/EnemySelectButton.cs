@@ -10,7 +10,7 @@ public class EnemySelectButton : MonoBehaviour
     {
         GameObject selector = enemy.GetComponent<EnemyStateMachine>().selector;
         selector.SetActive(false);
-        GameObject.Find("BattleManager").GetComponent<BattleStateMachine>().Input2(enemy);//save input of enemy prefab
+        GameObject.Find("BattleManager").GetComponent<BattleStateMachine>().ChooseEnemy(enemy);//save input of enemy prefab
     }
 
     public void ToggleSelector()

@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\alexg\\The-Guardian\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|c:\\users\\alexg\\the-guardian\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\statemachines\\herostatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\statemachines\\herostatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|c:\\users\\alexg\\the-guardian\\assets\\selectitembutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\selectitembutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\encounterzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\encounterzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\selectherobutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\selectherobutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\statemachines\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\statemachines\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\itemselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\itemselector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|c:\\users\\alexg\\the-guardian\\assets\\scripts\\base classes\\basehero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\base classes\\basehero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\base classes\\handleturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\base classes\\handleturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\dialogue\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\statemachines\\battlestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\statemachines\\battlestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|C:\\Users\\alexg\\The-Guardian\\assets\\scripts\\statemachines\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43613EF-538B-43D7-B2BA-8D3BA8AEF45D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\statemachines\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,79 +50,117 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EncounterZone.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\EncounterZone.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EncounterZone.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\EncounterZone.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EncounterZone.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T20:05:43.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HeroStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\HeroStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\StateMachines\\HeroStateMachine.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\HeroStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\StateMachines\\HeroStateMachine.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA8AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T19:07:46.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BattleStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAswG4AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T15:12:38.681Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EnemyStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAIwL0AAAAIAAAA",
+              "Title": "BaseHero.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Base Classes\\BaseHero.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Base Classes\\BaseHero.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Base Classes\\BaseHero.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Base Classes\\BaseHero.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T15:02:52.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Movement\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Movement\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Movement\\PlayerMovement.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAmwDAAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T16:03:26.984Z",
+              "WhenOpened": "2025-06-04T18:59:36.029Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SelectItemButton.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\SelectItemButton.cs",
+              "RelativeDocumentMoniker": "Assets\\SelectItemButton.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\SelectItemButton.cs",
+              "RelativeToolTip": "Assets\\SelectItemButton.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T11:54:48.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SelectHeroButton.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\SelectHeroButton.cs",
+              "RelativeDocumentMoniker": "Assets\\SelectHeroButton.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\SelectHeroButton.cs",
+              "RelativeToolTip": "Assets\\SelectHeroButton.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:12:35.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemSelector.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\ItemSelector.cs",
+              "RelativeDocumentMoniker": "Assets\\ItemSelector.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\ItemSelector.cs",
+              "RelativeToolTip": "Assets\\ItemSelector.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwEUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:05:10.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAiwEgAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T16:00:46.696Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HandleTurn.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Base Classes\\HandleTurn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Base Classes\\HandleTurn.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Base Classes\\HandleTurn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Base Classes\\HandleTurn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T15:32:32.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dialogue.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Dialogue\\Dialogue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\Dialogue.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\Dialogue\\Dialogue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialogue\\Dialogue.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T20:30:26.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BattleStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StateMachines\\BattleStateMachine.cs",
+              "ViewState": "AQIAACIBAAAAAAAAAAAAADcBAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:12:38.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EnemyStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
+              "ToolTip": "C:\\Users\\alexg\\The-Guardian\\Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StateMachines\\EnemyStateMachine.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAAHoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T15:02:52.713Z"
             }
           ]
         }

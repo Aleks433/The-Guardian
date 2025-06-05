@@ -8,7 +8,7 @@ public class Poison1 : BaseAttack
     {
         attackName = "Poison 1";
         attackDescription = "Simple Poison Spell";
-        attackDamage = 10f;
-        attackCost = 5f;
+        attackDamage = 10;
+        attackCost = 5;
     }
 }

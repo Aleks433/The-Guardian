@@ -20,6 +20,8 @@ public class HeroStateMachine : MonoBehaviour
         DEAD
     }
     public TurnState currentState;
+    public HandleTurn action;
+
     //for ProgressBar
     private float currentCooldown = 0f;
     private float maxCooldown = 5f;
@@ -101,13 +103,13 @@ public class HeroStateMachine : MonoBehaviour
                         for (int i = 0; i < BSM.performList.Count; i++)
                         {
                             HandleTurn choice = BSM.performList[i];
-                            if (choice.attackerGameObject == gameObject)
+                            if (choice.initiatorGameObject == gameObject)
                             {
                                 BSM.performList.Remove(choice);
                             }
-                            if (BSM.performList[i].attackerTarget == gameObject)
+                            if (BSM.performList[i].target == gameObject)
                             {
-                                BSM.performList[i].attackerTarget = BSM.heroesInBattle[Random.Range(0, BSM.heroesInBattle.Count)];
+                                BSM.performList[i].target = BSM.heroesInBattle[Random.Range(0, BSM.heroesInBattle.Count)];
                             }
                         }
                     }
@@ -137,32 +139,52 @@ public class HeroStateMachine : MonoBehaviour
 
     private IEnumerator TimeForAction()
     {
-        if(actionStarted)
+        if (actionStarted)
         {
             yield break;
         }
 
         actionStarted = true;
 
-        // animate enemy near the hero to attack
-        Vector3 heroPosition = new Vector3(enemyToAttack.transform.position.x , enemyToAttack.transform.position.y, enemyToAttack.transform.position.z - 1.5f);
-        while (MoveTo(heroPosition))
+        switch (action.turnType)
         {
-            yield return null;
-        }
+            case HandleTurn.TurnType.ATTACK:
+                {
+                    enemyToAttack = action.target;
+                    // animate enemy near the hero to attack
+                    Vector3 heroPosition = new Vector3(enemyToAttack.transform.position.x, enemyToAttack.transform.position.y, enemyToAttack.transform.position.z - 1.5f);
+                    while (MoveTo(heroPosition))
+                    {
+                        yield return null;
+                    }
 
-        //wait
-        yield return new WaitForSeconds(0.5f);
+                    //wait
+                    yield return new WaitForSeconds(0.5f);
 
-        //do damage
-        DoDamage();
+                    //do damage
+                    DoDamage();
 
-        //animate back to start position
-        Vector3 firstPosition = startPosition;
-        while (MoveTo(firstPosition))
-        {
-            yield return null;
-        }
+                    //animate back to start position
+                    Vector3 firstPosition = startPosition;
+                    while (MoveTo(firstPosition))
+                    {
+                        yield return null;
+                    }
+                    break;
+                }
+            case HandleTurn.TurnType.ITEM:
+                {
+                    //animation
+
+                    //wait
+                    yield return new WaitForSeconds(1.0f);
+
+                    HeroStateMachine targetHero = action.target.GetComponent<HeroStateMachine>();
+                    action.chosenItem.UseItem(targetHero.hero);
+
+                    break;
+                }
+        } 
 
         //remove this performer from the list in BSM
         BSM.performList.RemoveAt(0);
@@ -190,7 +212,7 @@ public class HeroStateMachine : MonoBehaviour
 
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         hero.currentHP -= damage;
         if(hero.currentHP <= 0) {
@@ -200,7 +222,7 @@ public class HeroStateMachine : MonoBehaviour
     }
     public void DoDamage()
     {
-        float calc_damage = hero.currentATK + BSM.performList[0].chosenAttack.attackDamage;
+        int calc_damage = hero.currentATK + BSM.performList[0].chosenAttack.attackDamage;
         hero.currentMP -= BSM.performList[0].chosenAttack.attackCost;
         enemyToAttack.GetComponent<EnemyStateMachine>().TakeDamage(calc_damage);
     }

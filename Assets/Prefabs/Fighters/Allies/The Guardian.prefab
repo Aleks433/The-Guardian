@@ -1862,9 +1862,9 @@ MonoBehaviour:
   hero:
     characterName: The Guardian
     baseHP: 100
-    currentHP: 100
+    currentHP: 50
     baseMP: 50
-    currentMP: 50
+    currentMP: 20
     baseATK: 30
     currentATK: 30
     baseDEF: 10
@@ -1879,6 +1879,14 @@ MonoBehaviour:
     - {fileID: -2278727350015730051, guid: 65d6f98948299c942a331af7979d8fe3, type: 3}
     - {fileID: 4010050442493239171, guid: e661773b31fb9324bb317b1e28ee232f, type: 3}
   currentState: 0
+  action:
+    initiatorName: 
+    type: 
+    turnType: 0
+    initiatorGameObject: {fileID: 0}
+    target: {fileID: 0}
+    chosenAttack: {fileID: 0}
+    chosenItem: {fileID: 0}
   progressBar: {fileID: 0}
   selector: {fileID: 5136578423352294038}
   enemyToAttack: {fileID: 0}

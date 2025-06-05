@@ -5,17 +5,17 @@ using UnityEngine;
 public class BaseClass {
     public string characterName;
 
-    public float baseHP;
-    public float currentHP;
+    public int baseHP;
+    public int currentHP;
 
-    public float baseMP;
-    public float currentMP;
+    public int baseMP;
+    public int currentMP;
 
-    public float baseATK;
-    public float currentATK;
+    public int baseATK;
+    public int currentATK;
 
-    public float baseDEF;
-    public float currentDEF;
+    public int baseDEF;
+    public int currentDEF;
 
     public List<BaseAttack> attacks;
 }

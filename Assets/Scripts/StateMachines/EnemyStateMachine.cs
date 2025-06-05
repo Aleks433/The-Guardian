@@ -78,11 +78,11 @@ public class EnemyStateMachine : MonoBehaviour
                     {
                         for (int i = 0; i < BSM.performList.Count; i++)
                         {
-                            if (BSM.performList[i].attackerTarget == gameObject)
+                            if (BSM.performList[i].target == gameObject)
                             {
-                                BSM.performList[i].attackerTarget = BSM.enemiesInBattle[Random.Range(0, BSM.enemiesInBattle.Count)];
+                                BSM.performList[i].target = BSM.enemiesInBattle[Random.Range(0, BSM.enemiesInBattle.Count)];
                             }
-                            if (BSM.performList[i].attackerGameObject == gameObject)
+                            if (BSM.performList[i].initiatorGameObject == gameObject)
                             {
                                 BSM.performList.Remove(BSM.performList[i]);
                             }
@@ -114,10 +114,11 @@ public class EnemyStateMachine : MonoBehaviour
     void ChooseAction()
     {
         HandleTurn myAttack = new HandleTurn();
-        myAttack.attacker = enemy.characterName;
+        myAttack.initiatorName = enemy.characterName;
         myAttack.type = "Enemy";
-        myAttack.attackerGameObject = this.gameObject;
-        myAttack.attackerTarget = BSM.heroesInBattle[Random.Range(0, BSM.heroesInBattle.Count)];
+        myAttack.initiatorGameObject = this.gameObject;
+        myAttack.target = BSM.heroesInBattle[Random.Range(0, BSM.heroesInBattle.Count)];
+        myAttack.turnType = HandleTurn.TurnType.ATTACK;
 
         myAttack.chosenAttack = enemy.attacks[Random.Range(0, enemy.attacks.Count)];
         BSM.CollectActions(myAttack);
@@ -179,11 +180,11 @@ public class EnemyStateMachine : MonoBehaviour
         {
             return;
         }
-        float totalDamage = enemy.currentATK + chosenAction.chosenAttack.attackDamage;
+        int totalDamage = enemy.currentATK + chosenAction.chosenAttack.attackDamage;
         heroToAttack.GetComponent<HeroStateMachine>().TakeDamage(totalDamage);
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         enemy.currentHP -= damage;
         if (enemy.currentHP <= 0)

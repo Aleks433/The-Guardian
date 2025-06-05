@@ -6,7 +6,7 @@ public class Punch : BaseAttack {
     public Punch() {
         attackName = "Punch";
         attackDescription = "A punch with your fist";
-        attackDamage = 5f;
+        attackDamage = 5;
         attackCost = 0;
     }
 }
